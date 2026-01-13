@@ -1,0 +1,11 @@
+Blue level: Easy jumps
+Yellow level: Not moving platforms
+Purple level: Purple Slimes - > Death
+White level: Moving platforms
+
+Additional:
+- Death Counter
+- Pick up the bottle from each level
+- Unlock winner room at the end with every bottle
+- Bottle Counter
+- Baits

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://1jxeeoei5hnr"]
+
+[ext_resource type="Script" uid="uid://ddj2fecmajecp" path="res://scripts/Npc.cs" id="1_6axky"]
+[ext_resource type="Texture2D" uid="uid://bpfeery0ctork" path="res://assets/sprites/homeless_man_pixel_art_by_briendead_dg3d8k9-fullview.png" id="1_kei7b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6axky"]
+size = Vector2(18, 19)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_6axky")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -2.5)
+shape = SubResource("RectangleShape2D_6axky")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.4999998, -2.9999995)
+scale = Vector2(0.114999995, 0.10000001)
+texture = ExtResource("1_kei7b")

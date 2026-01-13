@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://uiiep403ospd"]
+
+[ext_resource type="Script" uid="uid://dynks2moy3uve" path="res://scripts/Bottle.cs" id="1_fxl6q"]
+[ext_resource type="Texture2D" uid="uid://dw6l7656g3cdr" path="res://assets/world_tileset.png" id="1_wlvw4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fxl6q"]
+radius = 4.0
+height = 16.0
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 2
+monitorable = false
+script = ExtResource("1_fxl6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(1, 0.9285714)
+texture = ExtResource("1_wlvw4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_fxl6q")

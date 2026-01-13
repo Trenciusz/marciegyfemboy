@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://c72nsq3cty7jo"]
+
+[ext_resource type="Script" uid="uid://dphmjuiolmp1j" path="res://scripts/Hud.cs" id="1_ahhtf"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_ahhtf")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 132.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 24
+text = "Üvegek: 0 | Forint: 0
+"
+
+[node name="MessageLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 60.0
+offset_right = 60.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 30

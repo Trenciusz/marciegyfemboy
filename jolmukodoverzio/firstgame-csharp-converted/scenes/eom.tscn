@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cppd6tmc4kpcg"]
+
+[ext_resource type="Script" uid="uid://b1w5e0fn22jk" path="res://scripts/Eom.cs" id="1_lyt8s"]
+
+[node name="eom" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_lyt8s")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true

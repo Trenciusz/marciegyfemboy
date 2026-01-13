@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpcmgptappxl3"]
+
+[ext_resource type="Script" uid="uid://dxectnkmtif1a" path="res://scenes/CollisionShape2d1.cs" id="1_llfif"]
+[ext_resource type="Texture2D" uid="uid://bxy5pr77ujct6" path="res://assets/sprites/platforms.png" id="1_o7n6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_llfif"]
+size = Vector2(32, 8)
+
+[node name="p_platform(big)" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_o7n6c")
+region_enabled = true
+region_rect = Rect2(16, 32, 32, 9)
+
+[node name="CollisionShape2D_1" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_llfif")
+one_way_collision = true
+script = ExtResource("1_llfif")
+
+[node name="Timer" type="Timer" parent="CollisionShape2D_1"]
+wait_time = 0.1
