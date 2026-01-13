@@ -33,13 +33,4 @@ public partial class Hud : CanvasLayer
 		_messageTimer = seconds;
 	}
 
-	public override void _Process(double delta)
-	{
-		if (_messageTimer <= 0.0f || _messageLabel == null)
-			return;
-
-		_messageTimer -= (float)delta;
-		if (_messageTimer <= 0.0f)
-			_messageLabel.Text = "";
-	}
 }
