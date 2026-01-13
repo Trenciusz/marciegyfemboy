@@ -28,13 +28,4 @@ public partial class Bottle : Area2D
 			_playerRef = null;
 		}
 	}
-
-	public override void _Process(double delta)
-	{
-		if (_playerInside && Input.IsActionJustPressed("interact") && _playerRef != null)
-		{
-			_playerRef.CollectBottle();
-			QueueFree();
-		}
-	}
 }
